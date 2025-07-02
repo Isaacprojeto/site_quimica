@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Site química</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f0f4f8; 
+    }
+
+    footer {
+      background-color: #f9f9f9;
+      padding: 25px 20px;
+      margin-top: 40px;
+      font-family: Arial, sans-serif;
+      color: #333;
+      border-top: 2px solid #3b82f6;
+    }
+
+    footer h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1e40af;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    footer ul {
+      list-style-type: disc;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-left: 40px;
+    }
+
+    footer li {
+      margin-bottom: 12px;
+      line-height: 1.5;
+      font-size: 16px;
+     
+      text-indent: -20px;
+      padding-left: 20px;
+    }
+
+    footer a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #3b82f6;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .imagem-centralizada {
+      text-align: center;        
+      margin: 30px 0;            
+    }
+
+    .imagem-centralizada img {
+      max-width: 100%;          
+      height: auto;             
+      display: inline-block;     
+    }
+
+    .referencia {
+      font-size: 14px;         
+      color: #555;         
+      margin-top: 8px;         
+      font-style: italic;       
+    }
+    
+    p {
+      text-indent: 2em;
+    }
+    
+    .titulo {
+      width: 100%;                   
+      background-color: #3b82f6;    
+      color: white;                 
+      text-align: center;            
+      font-size: 36px;              
+      font-weight: bold;             
+      padding: 20px 0;            
+      margin: 0 0 30px 0;           
+      text-transform: uppercase;     
+      letter-spacing: 2px;           
+      animation: fadeIn 1s ease;     
+    }
+
+    .time {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 10px;       
+      max-width: 800px;
+      margin: 0 auto;
+      animation: fadeIn 1s ease;
+    }
+  
+    .apresentacao {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: slideUp 1s ease;
+      width: 100%; 
+    }
+
+    .apresentacao:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(59, 130, 246, 0.5);
+    }
+
+    .apresentacao img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+
+    .apresentacao img:hover {
+      transform: scale(1.1);
+    }
+
+    .nome {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+
+    @media (max-width: 600px) {
+      .apresentacao {
+        width: 100%;
+      }
+    }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="titulo">Informática 2024</h1>
+
+  <div class="time">
+    <div class="apresentacao">
+      <img src="https://i.postimg.cc/bwWGg3z5/Captura-de-tela-2025-06-28-100721.png" alt="Foto de Isaac Vinícius" />
+      <div class="nome">Discente: Isaac Vinícius Laranjeira Saraiva</div>
+    </div>
+
+    <div class="apresentacao">
+      <img src="https://i.postimg.cc/4xCPxPGG/J-P.jpg" alt="Foto de João Paulo" />
+      <div class="nome">Discente: João Paulo Borges Lima</div>
+    </div>
+
+    <div class="apresentacao">
+      <img src="https://i.postimg.cc/mrjyVGHZ/Maria.jpg" alt="Foto de Maria Clara" />
+      <div class="nome">Discente: Maria Clara de Almeida</div>
+    </div>
+
+    <div class="apresentacao">
+      <img src="https://i.postimg.cc/vZWzgn8V/J-V.jpg" alt="Foto de João Victor" />
+      <div class="nome">Discente: João Victor de Almeida Farias</div>
+    </div>
+  </div>
+
+  <h1 class="titulo">Indicadores Ácido-Base: Artificiais e Naturais</h1>
+
+  <p>Indicadores ácido-base são substâncias usadas para identificar se uma solução é ácida, neutra ou básica (alcalina). Eles funcionam mudando de cor de acordo com o pH do meio em que são colocados. Por isso, são muito importantes em experimentos químicos, análises laboratoriais, no ensino de química e até em algumas aplicações industriais.
+Esses indicadores podem ser naturais, como os extraídos de plantas (por exemplo, o repolho roxo, que muda de cor em contato com ácidos ou bases), ou artificiais, como a fenolftaleína e o azul de bromotimol, que são produzidos em laboratório e têm uma faixa de pH bem definida em que mudam de cor.
+Quando colocados em uma solução, os indicadores mostram visualmente se o meio está:</p>
+<ul>
+  <li>Ácido (pH menor que 7)</li>
+  <li>Neutro (pH em torno de 7)</li>
+  <li>Básico (pH maior que 7)</li>
+</ul>
+<p>Assim, os indicadores ácido-base são ferramentas simples, rápidas e eficazes para medir a acidez ou alcalinidade de uma substância.</p>
+
+  <h3 class="titulo">Escala do pH</h3>
+
+  <p>A escala de pH é usada para medir o grau de acidez ou alcalinidade (basicidade) de soluções aquosas. Ela vai de 0 a 14, onde valores abaixo de 7 indicam soluções ácidas, 7 é neutro (como a água pura) e acima de 7 são soluções básicas ou alcalinas.
+O jeito correto de escrever é pH, com “p” minúsculo e “H” maiúsculo, pois significa “potencial hidrogeniônico”, que se refere à concentração de íons hidrogênio (H⁺) em uma solução.
+Vale destacar que a escala de pH depende da temperatura, porque a ionização da água muda com o calor: em temperaturas mais altas, a água se ioniza mais, alterando o valor do pH neutro. Por exemplo, a 25°C o pH neutro é 7, mas em temperaturas maiores, o pH neutro pode ser um pouco menor.
+</p>
+
+  <div class="imagem-centralizada">
+   <img src="https://i.postimg.cc/yN5MH2NX/escala-p-H.png" alt="Imagem da escala de pH">
+    <p class="referencia">Fonte: Imagem do YouTube Prof. JP</p>
+  </div>
+
+  <p>A concentração de íons hidrogênio (H⁺) em uma solução determina o seu pH: quanto maior essa concentração, mais ácida é a solução; quanto menor, mais alcalina.
+Na escala de pH, valores baixos significam alta acidez, enquanto valores altos indicam maior alcalinidade. Por isso, pH 1 é muito ácido, enquanto pH 14 é muito básico (alcalino).
+</p>
+
+  <h3>Veja a tabela Comparativa de Indicadores Artificiais e Naturais</h3>
+
+  <table border="1" cellspacing="0" cellpadding="8">
+    <thead>
+      <tr>
+        <th>Indicador</th>
+        <th>Tipo</th>
+        <th>Mudança de cor</th>
+        <th>Faixa de pH de mudança</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Repolho roxo</strong></td>
+        <td>Natural</td>
+        <td>Vermelho (ácido) → Verde/Azul (básico)</td>
+        <td>Ácido &lt;7 → Neutro 7 → Básico &gt;7</td>
+      </tr>
+      <tr>
+        <td><strong>Hibisco</strong></td>
+        <td>Natural</td>
+        <td>Rosa-avermelhado (ácido) → Verde (básico)</td>
+        <td>Sem faixa exata (mudança gradual)</td>
+      </tr>
+      <tr>
+        <td><strong>Cúrcuma (açafrão)</strong></td>
+        <td>Natural</td>
+        <td>Amarelo → Laranja-avermelhado</td>
+        <td>pH &gt;8,5</td>
+      </tr>
+      <tr>
+        <td><strong>Fenolftaleína</strong></td>
+        <td>Artificial</td>
+        <td>Incolor → Rosa</td>
+        <td>pH 8,2 – 10,0</td>
+      </tr>
+      <tr>
+        <td><strong>Alaranjado de metila</strong></td>
+        <td>Artificial</td>
+        <td>Vermelho → Amarelo</td>
+        <td>pH 3,1 – 4,4</td>
+      </tr>
+      <tr>
+        <td><strong>Azul de bromotimol</strong></td>
+        <td>Artificial</td>
+        <td>Amarelo → Verde → Azul</td>
+        <td>pH 6,0 – 7,6</td>
+      </tr>
+      <tr>
+        <td><strong>Vermelho de fenol</strong></td>
+        <td>Artificial</td>
+        <td>Amarelo → Vermelho</td>
+        <td>pH 6,8 – 8,4</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <h2>Referências</h2>
+    <ul>
+      <li>
+        BATISTA, Carolina. Indicadores ácido-base. Toda Matéria, [s.d.]. Disponível em: 
+        <a href="https://www.todamateria.com.br/indicadores-acido-base/" target="_blank" rel="noopener noreferrer">
+          https://www.todamateria.com.br/indicadores-acido-base/
+        </a>. Acesso em: 2 jul. 2025.
+      </li>
+      <li>
+        Indicadores ácido-base. Mundo Educação, [s.d.]. Disponível em: 
+        <a href="https://mundoeducacao.uol.com.br/quimica/indicadores-acido-base.htm" target="_blank" rel="noopener noreferrer">
+          https://mundoeducacao.uol.com.br/quimica/indicadores-acido-base.htm
+        </a>. Acesso em: 2 jul. 2025.
+      </li>
+    </ul>
+  </footer>
+
+</body>
+</html>
